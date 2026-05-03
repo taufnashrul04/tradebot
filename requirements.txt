@@ -1,0 +1,43 @@
+# ============================================================
+# Bot Trade — Requirements
+# ============================================================
+
+# Core async & HTTP
+aiohttp>=3.9.0
+httpx>=0.27.0
+
+# CLI & terminal UI
+typer[all]>=0.12.0
+rich>=13.7.0
+click>=8.1.0
+
+# Config & env
+python-dotenv>=1.0.0
+tomli>=2.0.1; python_version < "3.11"
+
+# Nado Protocol SDK
+nado-protocol>=0.3.5
+
+# Aptos SDK (for Decibel)
+aptos-sdk>=0.9.0
+
+# Web3 (for Rise Trade - EVM chain)
+web3>=6.15.0
+# eth-account conflict with nado-protocol, using bundled version
+
+# Technical Indicators
+pandas>=2.0.0
+# pandas-ta needs python3.12+ 
+numpy>=1.26.0
+
+# Logging
+loguru>=0.7.2
+
+# Async utilities
+asyncio-throttle>=1.0.2
+
+# Scheduling
+apscheduler>=3.10.4
+
+# Data persistence
+aiosqlite>=0.20.0
